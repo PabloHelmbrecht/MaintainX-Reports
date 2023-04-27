@@ -21,14 +21,14 @@ export default function Index() {
       <Global
         styles={{
           body: {
-            fontFamily: 'system-ui, sans-serif',
+            fontFamily: 'Poppins, sans-serif',
             margin: 0,
-            color: '#4c4a4a'
+            color: '#001e40'
           },
           '@media (prefers-color-scheme: dark)': {
             body: {
               backgroundColor: '#212121',
-              color: '#fff'
+              color: '#001e40'
             }
           }
         }}
@@ -43,33 +43,33 @@ export default function Index() {
         }}
       >
         <h1 css={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 0 }}>
-          Next.js Material PWA
+          Reporte de Fallas
         </h1>
         <div
           css={{
             maxWidth: '300px',
+            paddingTop: '1rem',
+            paddingBottom: '1rem',
             '& img': {
               width: '100%',
               height: 'auto'
             }
           }}
         >
-          <Image alt="" src="/landing-page.svg" width={400} height={300} />
+          <Image alt="" src="/maintainx.svg" width={400} height={300} />
         </div>
         <div
           css={{
             maxWidth: 400,
             fontSize: '0.8rem',
-            padding: '0 12px'
+            padding: '0 12px',
+            textAlign: 'center'
           }}
         >
           <p>
-            When you launch the app for the first time, there will be a simple
-            onboarding slideshow, that will only be shown once.
-          </p>
-          <p>
-            If you like to see the onboarding again, hold down the{' '}
-            <strong>ctrl/command</strong> when launching the app.
+            Selecciona a continuación el sector en el cual se encuentra la
+            falla, si la falla es edilicia haz clic en el botón{' '}
+            <strong>edilicio</strong>
           </p>
         </div>
         <a
@@ -77,14 +77,15 @@ export default function Index() {
           css={{
             marginTop: 14,
             padding: 12,
-            backgroundColor: 'blue',
+            backgroundColor: 'rgb(24, 135, 252)',
             borderRadius: 8,
             color: '#fff',
             fontSize: '1rem',
             textDecoration: 'none',
             textAlign: 'center',
             cursor: 'pointer',
-            userSelect: 'none'
+            userSelect: 'none',
+            fontWeight: 'semibold'
           }}
         >
           Launch Application
