@@ -2,11 +2,11 @@
   "theme_color": "#4a90e2",
   "background_color": "#4a90e2",
   "display": "standalone",
-  "id": "material-pwa.vercel.app",
+  "id": "maintainx.vercel.app",
   "start_url": "/app",
-  "name": "Next.js PWA",
-  "short_name": "Next.js PWA",
-  "description": "Next.js PWA with Material Design demo",
+  "name": "Reporte de Fallas",
+  "short_name": "Reporte de Fallas",
+  "description": "Reporte de Fallas con MaintainX",
   "orientation": "any",
   "icons": [
     {
