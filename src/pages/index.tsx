@@ -4,6 +4,7 @@ import Cookies from 'js-cookie'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { getPortalsData } from 'lib/client/utils'
 
 export default function Index() {
   const router = useRouter()
@@ -72,24 +73,37 @@ export default function Index() {
             <strong>edilicio</strong>
           </p>
         </div>
-        <a
-          onClick={handleAppLaunch}
+        <div
           css={{
-            marginTop: 14,
-            padding: 12,
-            backgroundColor: 'rgb(24, 135, 252)',
-            borderRadius: 8,
-            color: '#fff',
-            fontSize: '1rem',
-            textDecoration: 'none',
-            textAlign: 'center',
-            cursor: 'pointer',
-            userSelect: 'none',
-            fontWeight: 'semibold'
+            maxWidth: 400,
+            display: 'flex',
+            flexDirection: 'column'
           }}
         >
-          Launch Application
-        </a>
+          {getPortalsData().map((portal, index) => {
+            return (
+              <a
+                key={index}
+                onClick={handleAppLaunch}
+                css={{
+                  marginTop: 14,
+                  padding: 12,
+                  backgroundColor: 'rgb(24, 135, 252)',
+                  borderRadius: 8,
+                  color: '#fff',
+                  fontSize: '1rem',
+                  textDecoration: 'none',
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                  userSelect: 'none',
+                  fontWeight: 'semibold'
+                }}
+              >
+                {portal.location}
+              </a>
+            )
+          })}
+        </div>
       </div>
     </>
   )
