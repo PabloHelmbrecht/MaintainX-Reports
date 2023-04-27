@@ -31,8 +31,7 @@ export default function LocationSite() {
           flexFlow: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          height: '100vh',
-          padding: '5rem'
+          padding: '3rem'
         }}
       >
         <h1 css={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 0 }}>
@@ -47,7 +46,7 @@ export default function LocationSite() {
             textAlign: 'center'
           }}
         >
-          <p>Selecciona a continuación el equipo que presenta fallas:</p>
+          <p>Selecciona a continuación el equipo que presenta fallas</p>
         </div>
         <div
           css={{
@@ -113,7 +112,8 @@ export default function LocationSite() {
               fontWeight: 'semibold',
               transition: 'all 0.3s ease',
               '&:hover': {
-                backgroundColor: 'rgb(24, 135, 252)',
+                borderColor: '#0c68c9',
+                backgroundColor: '#0c68c9',
                 color: 'white'
               }
             }}
