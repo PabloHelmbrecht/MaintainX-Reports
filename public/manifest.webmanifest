@@ -3,7 +3,7 @@
   "background_color": "#4a90e2",
   "display": "standalone",
   "id": "maintainx.vercel.app",
-  "start_url": "/app",
+  "start_url": "/",
   "name": "Reporte de Fallas",
   "short_name": "Reporte de Fallas",
   "description": "Reporte de Fallas con MaintainX",
