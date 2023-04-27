@@ -36,7 +36,7 @@ export default function Index() {
         </h1>
         <div
           css={{
-            maxWidth: '300px',
+            maxWidth: '19rem',
             paddingTop: '1rem',
             paddingBottom: '1rem',
             '& img': {
@@ -49,7 +49,8 @@ export default function Index() {
         </div>
         <div
           css={{
-            maxWidth: 400,
+            width: '25rem',
+            maxWidth: '80%',
             fontSize: '0.8rem',
             padding: '0 12px',
             textAlign: 'center'
@@ -63,7 +64,8 @@ export default function Index() {
         </div>
         <div
           css={{
-            maxWidth: 400,
+            width: '25rem',
+            maxWidth: '80%',
             display: 'flex',
             flexDirection: 'column'
           }}
@@ -85,7 +87,11 @@ export default function Index() {
                     textAlign: 'center',
                     cursor: 'pointer',
                     userSelect: 'none',
-                    fontWeight: 'semibold'
+                    fontWeight: 'semibold',
+                    transition: 'all 0.3s ease',
+                    '&:hover': {
+                      backgroundColor: '#0c68c9'
+                    }
                   }}
                 >
                   {portal}
