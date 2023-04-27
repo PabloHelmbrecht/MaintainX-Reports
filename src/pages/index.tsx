@@ -3,10 +3,14 @@ import Image from 'next/image'
 import React from 'react'
 import { getPortalsData } from 'lib/client/utils'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Reporte de Fallas</title>
+      </Head>
       <Global
         styles={{
           body: {
@@ -71,6 +75,30 @@ export default function Index() {
             flexDirection: 'column'
           }}
         >
+          <a
+            href={
+              'https://app.getmaintainx.com/request-portal/bffc4140-28d9-435e-aade-278c9988dc2f'
+            }
+            css={{
+              marginTop: 14,
+              padding: 12,
+              backgroundColor: 'rgb(24, 135, 252)',
+              borderRadius: 8,
+              color: '#fff',
+              fontSize: '1rem',
+              textDecoration: 'none',
+              textAlign: 'center',
+              cursor: 'pointer',
+              userSelect: 'none',
+              fontWeight: 'semibold',
+              transition: 'all 0.3s ease',
+              '&:hover': {
+                backgroundColor: '#0c68c9'
+              }
+            }}
+          >
+            Edilicio
+          </a>
           {[...new Set(getPortalsData().map((portal) => portal.location))].map(
             (portal, index) => {
               return (
