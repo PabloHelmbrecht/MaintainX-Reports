@@ -1,17 +1,10 @@
 import { Global } from '@emotion/react'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 import React from 'react'
 import { getPortalsData } from 'lib/client/utils'
+import Link from 'next/link'
 
 export default function Index() {
-  const router = useRouter()
-  const handleLocationLaunch = (location: string) => {
-    if (location) {
-      router.push(`/${encodeURIComponent(location)}`)
-    }
-  }
-
   return (
     <>
       <Global
@@ -75,31 +68,31 @@ export default function Index() {
             flexDirection: 'column'
           }}
         >
-          {getPortalsData().map((portal, index) => {
-            return (
-              <a
-                key={index}
-                onClick={() => {
-                  handleLocationLaunch(portal.location)
-                }}
-                css={{
-                  marginTop: 14,
-                  padding: 12,
-                  backgroundColor: 'rgb(24, 135, 252)',
-                  borderRadius: 8,
-                  color: '#fff',
-                  fontSize: '1rem',
-                  textDecoration: 'none',
-                  textAlign: 'center',
-                  cursor: 'pointer',
-                  userSelect: 'none',
-                  fontWeight: 'semibold'
-                }}
-              >
-                {portal.location}
-              </a>
-            )
-          })}
+          {[...new Set(getPortalsData().map((portal) => portal.location))].map(
+            (portal, index) => {
+              return (
+                <Link
+                  key={index}
+                  href={`/${encodeURIComponent(portal)}`}
+                  css={{
+                    marginTop: 14,
+                    padding: 12,
+                    backgroundColor: 'rgb(24, 135, 252)',
+                    borderRadius: 8,
+                    color: '#fff',
+                    fontSize: '1rem',
+                    textDecoration: 'none',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                    fontWeight: 'semibold'
+                  }}
+                >
+                  {portal}
+                </Link>
+              )
+            }
+          )}
         </div>
       </div>
     </>
