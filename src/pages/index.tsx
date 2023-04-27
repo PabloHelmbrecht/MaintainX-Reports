@@ -7,7 +7,9 @@ import { getPortalsData } from 'lib/client/utils'
 export default function Index() {
   const router = useRouter()
   const handleLocationLaunch = (location: string) => {
-    router.push(`/${encodeURIComponent(location)}`)
+    if (location) {
+      router.push(`/${encodeURIComponent(location)}`)
+    }
   }
 
   return (
@@ -77,7 +79,9 @@ export default function Index() {
             return (
               <a
                 key={index}
-                onClick={handleLocationLaunch}
+                onClick={() => {
+                  handleLocationLaunch(portal.location)
+                }}
                 css={{
                   marginTop: 14,
                   padding: 12,
