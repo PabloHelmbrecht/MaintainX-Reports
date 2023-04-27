@@ -18,7 +18,117 @@ export function getPortalsData() {
       url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
     },
     {
-      location: 'DVH ',
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
+      asset: 'Cargador Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'TVH',
+      asset: 'Cargador de Desecante Automático',
+      url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
+    },
+    {
+      location: 'DVH',
       asset: 'Cargador Desecante Automático',
       url: 'https://app.getmaintainx.com/request-portal/0edd8330-c730-43e6-81a4-0ee385a443aa'
     }
