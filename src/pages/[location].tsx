@@ -2,6 +2,7 @@ import { Global } from '@emotion/react'
 import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import Head from 'next/head'
 import { getPortalsData } from 'lib/client/utils'
 
 export default function LocationSite() {
@@ -10,6 +11,9 @@ export default function LocationSite() {
 
   return (
     <>
+      <Head>
+        <title>{location}</title>
+      </Head>
       <Global
         styles={{
           body: {
