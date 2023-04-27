@@ -381,11 +381,6 @@ export function getPortalsData() {
       location: 'Templado',
       asset: 'Mesa Transportadora Ashton',
       url: 'https://app.getmaintainx.com/request-portal/23545717-9d1b-4451-9ebf-fda41dcd8ed7'
-    },
-    {
-      location: 'Edilicio',
-      asset: 'Edilicio',
-      url: 'https://app.getmaintainx.com/request-portal/bffc4140-28d9-435e-aade-278c9988dc2f'
     }
   ]
 }
