@@ -1,18 +1,14 @@
 import { Global } from '@emotion/react'
-import { cookies } from 'lib/shared/config'
-import Cookies from 'js-cookie'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { getPortalsData } from 'lib/client/utils'
 
 export default function Index() {
   const router = useRouter()
-  const handleAppLaunch = (e: React.MouseEvent) => {
-    if (!Cookies.get(cookies.slideshowShown.name) || e.ctrlKey) {
-      Cookies.set(cookies.slideshowShown.name, '1')
-      router.push('/onboarding')
-    } else {
-      router.push('/app')
+  const handleLocationLaunch = (location: string) => {
+    if (location) {
+      router.push(`/${encodeURIComponent(location)}`)
     }
   }
 
@@ -72,24 +68,39 @@ export default function Index() {
             <strong>edilicio</strong>
           </p>
         </div>
-        <a
-          onClick={handleAppLaunch}
+        <div
           css={{
-            marginTop: 14,
-            padding: 12,
-            backgroundColor: 'rgb(24, 135, 252)',
-            borderRadius: 8,
-            color: '#fff',
-            fontSize: '1rem',
-            textDecoration: 'none',
-            textAlign: 'center',
-            cursor: 'pointer',
-            userSelect: 'none',
-            fontWeight: 'semibold'
+            maxWidth: 400,
+            display: 'flex',
+            flexDirection: 'column'
           }}
         >
-          Launch Application
-        </a>
+          {getPortalsData().map((portal, index) => {
+            return (
+              <a
+                key={index}
+                onClick={() => {
+                  handleLocationLaunch(portal.location)
+                }}
+                css={{
+                  marginTop: 14,
+                  padding: 12,
+                  backgroundColor: 'rgb(24, 135, 252)',
+                  borderRadius: 8,
+                  color: '#fff',
+                  fontSize: '1rem',
+                  textDecoration: 'none',
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                  userSelect: 'none',
+                  fontWeight: 'semibold'
+                }}
+              >
+                {portal.location}
+              </a>
+            )
+          })}
+        </div>
       </div>
     </>
   )
