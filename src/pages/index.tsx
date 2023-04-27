@@ -3,10 +3,14 @@ import Image from 'next/image'
 import React from 'react'
 import { getPortalsData } from 'lib/client/utils'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Reporte de Fallas</title>
+      </Head>
       <Global
         styles={{
           body: {
