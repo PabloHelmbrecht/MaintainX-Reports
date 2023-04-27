@@ -1,12 +1,12 @@
 {
-  "theme_color": "#0c68c9",
-  "background_color": "#0c68c9",
+  "theme_color": "#4a90e2",
+  "background_color": "#4a90e2",
   "display": "standalone",
-  "id": "https://maintainx.vercel.app/",
-  "start_url": "/",
-  "name": "Reporte de Fallas,
-  "short_name": "Reporte Fallas",
-  "description": "Reporte de Fallas a Mantenimiento",
+  "id": "material-pwa.vercel.app",
+  "start_url": "/app",
+  "name": "Next.js PWA",
+  "short_name": "Next.js PWA",
+  "description": "Next.js PWA with Material Design demo",
   "orientation": "any",
   "icons": [
     {
@@ -24,14 +24,32 @@
   ],
   "shortcuts": [
     {
-      "name": "Ir a Home",
+      "name": "Go to Home",
       "short_name": "Home",
-      "description": "Abrir la home del reporte de fallas",
-      "url": "/",
+      "description": "Open home section of the applications",
+      "url": "app",
       "icons": [
         { "src": "app/shortcuts/home-shortcut.png", "sizes": "192x192" }
       ]
     },
+    {
+      "name": "Go to Settings",
+      "short_name": "Settings",
+      "description": "Open settings section of the applications",
+      "url": "app/settings",
+      "icons": [
+        { "src": "app/shortcuts/settings-shortcut.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "Go to Profile",
+      "short_name": "Profile",
+      "description": "Open profile section of the applications",
+      "url": "app/settings?section=profile",
+      "icons": [
+        { "src": "app/shortcuts/profile-shortcut.png", "sizes": "192x192" }
+      ]
+    }
   ],
   "screenshots": [
     {
