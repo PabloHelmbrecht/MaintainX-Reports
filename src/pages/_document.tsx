@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
             // @ts-expect-error - type mismatch
             this.props.emotionStyleTags
           }
+          <title>Reporte de Fallas</title>
         </Head>
         <body>
           <Main />

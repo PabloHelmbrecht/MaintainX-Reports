@@ -28,8 +28,8 @@ export default function Index() {
           flexFlow: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          height: '100vh',
-          padding: '5rem'
+
+          padding: '3rem'
         }}
       >
         <h1 css={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 0 }}>
