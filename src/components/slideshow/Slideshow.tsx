@@ -40,7 +40,7 @@ export function Slideshow({ slides }: { slides: ReactNode[] }) {
         />
       </Head>
       <div
-        css={{
+        style={{
           backgroundColor: backgroundColors[index],
           transition: 'background-color 1s ease-out'
         }}
@@ -53,7 +53,7 @@ export function Slideshow({ slides }: { slides: ReactNode[] }) {
           {slides}
         </BindKeyboardSwipeableViews>
         <div
-          css={{
+          style={{
             position: 'absolute',
             width: '100%',
             bottom: 20,

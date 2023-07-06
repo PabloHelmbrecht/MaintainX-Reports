@@ -27,7 +27,7 @@ export default function Index() {
         }}
       />
       <div
-        css={{
+        style={{
           display: 'flex',
           flexFlow: 'column',
           alignItems: 'center',
@@ -36,11 +36,11 @@ export default function Index() {
           padding: '3rem'
         }}
       >
-        <h1 css={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 0 }}>
+        <h1 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 0 }}>
           Reporte de Fallas
         </h1>
         <div
-          css={{
+          style={{
             maxWidth: '19rem',
             paddingTop: '1rem',
             paddingBottom: '1rem',
@@ -53,7 +53,7 @@ export default function Index() {
           <Image alt="" src="/maintainx.svg" width={400} height={300} />
         </div>
         <div
-          css={{
+          style={{
             width: '25rem',
             maxWidth: '80%',
             fontSize: '0.8rem',
@@ -68,7 +68,7 @@ export default function Index() {
           </p>
         </div>
         <div
-          css={{
+          style={{
             width: '25rem',
             maxWidth: '80%',
             display: 'flex',
@@ -79,7 +79,7 @@ export default function Index() {
             href={
               'https://app.getmaintainx.com/request-portal/bffc4140-28d9-435e-aade-278c9988dc2f'
             }
-            css={{
+            style={{
               marginTop: 14,
               padding: 12,
               backgroundColor: 'rgb(24, 135, 252)',
@@ -105,7 +105,7 @@ export default function Index() {
                 <Link
                   key={index}
                   href={`/${encodeURIComponent(portal)}`}
-                  css={{
+                  style={{
                     marginTop: 14,
                     padding: 12,
                     backgroundColor: 'rgb(24, 135, 252)',

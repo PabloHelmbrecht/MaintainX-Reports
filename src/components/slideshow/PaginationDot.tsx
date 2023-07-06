@@ -41,7 +41,7 @@ export function PaginationDot({
   return (
     <button
       type="button"
-      css={{
+      style={{
         height: 20,
         width: 20,
         cursor: 'pointer',
@@ -52,7 +52,7 @@ export function PaginationDot({
       }}
       onClick={handleClick}
     >
-      <div css={css} />
+      <div style={css} />
     </button>
   )
 }

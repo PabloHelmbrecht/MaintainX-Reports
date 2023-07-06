@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function SlideOne() {
   return (
-    <div css={slideStyles}>
+    <div style={slideStyles}>
       <div className="content">
         <Image
           priority={true}
@@ -12,7 +12,7 @@ export function SlideOne() {
           width={400}
           height={300}
         />
-        <div css={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
           <h1>Progressive Web App</h1>
           <p>Hint: Swipe anywhere to switch slides</p>
         </div>

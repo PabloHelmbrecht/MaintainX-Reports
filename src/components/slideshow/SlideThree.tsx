@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function SlideThree() {
   return (
-    <div css={slideStyles}>
+    <div style={slideStyles}>
       <div className="content">
         <Image
           priority={true}
@@ -12,7 +12,7 @@ export function SlideThree() {
           width={400}
           height={300}
         />
-        <div css={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
           <h1>Mobile and Desktop</h1>
           <p>Supports both mobile and desktop layouts</p>
         </div>

@@ -30,7 +30,7 @@ export default function LocationSite() {
         }}
       />
       <div
-        css={{
+        style={{
           display: 'flex',
           flexFlow: 'column',
           alignItems: 'center',
@@ -38,11 +38,11 @@ export default function LocationSite() {
           padding: '3rem'
         }}
       >
-        <h1 css={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 0 }}>
+        <h1 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 0 }}>
           {location}
         </h1>
         <div
-          css={{
+          style={{
             width: '25rem',
             maxWidth: '80%',
             fontSize: '0.8rem',
@@ -53,7 +53,7 @@ export default function LocationSite() {
           <p>Selecciona a continuación el equipo que presenta fallas</p>
         </div>
         <div
-          css={{
+          style={{
             width: '25rem',
             maxWidth: '80%',
             display: 'flex',
@@ -67,7 +67,7 @@ export default function LocationSite() {
                 <a
                   key={index}
                   href={portal.url}
-                  css={{
+                  style={{
                     marginTop: 14,
                     padding: 12,
                     backgroundColor: 'rgb(24, 135, 252)',
@@ -91,7 +91,7 @@ export default function LocationSite() {
             })}
         </div>
         <div
-          css={{
+          style={{
             width: '25rem',
             maxWidth: '80%',
             display: 'flex',
@@ -101,7 +101,7 @@ export default function LocationSite() {
         >
           <Link
             href={'/'}
-            css={{
+            style={{
               marginTop: 14,
               padding: 12,
               backgroundColor: 'transparent',

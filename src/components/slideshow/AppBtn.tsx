@@ -3,7 +3,7 @@ export function FinishSlideshowBtn({ text }: { text: string }) {
   return (
     <Link href="/app">
       <a
-        css={{
+        style={{
           marginBottom: 24,
           cursor: 'pointer',
           border: '2px solid #fff',
